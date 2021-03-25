@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>TODO -- LIST</h1>
+    <div class="todo-edit">
+        <h2>Edit todo</h2>
+        <div class="container-edit">
+            <input class="hiddeninput" type="hidden" name="">
+            <input class="editinput" type="text " name="edit-todo"/>
+            <div class="edit-button">
+                <button class="btn btn-delete">Cancal</button>
+                <button class="btn btn-edit">EDIT</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form action="" class="todo-form">
+            <input type="text" name="todo" placeholder="Create New todo"/>
+            <input type="submit" class="btn btn-create" value="Create"/>            
+        </form>
+        <ul class="todo-list">
+            <!-- <li class="todo-item">
+                <span>TODO</span>
+                <div class=" btn todo-buttons">
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

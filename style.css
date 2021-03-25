@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: #2980b9;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 4rem;
+    position:absolute ;
+    top: 4rem;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+ul{
+    list-style: none;
+}
+input{
+    padding:2rem ,3rem;
+    width: 80%;
+     outline: none;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder{
+    font-weight: normal;
+    color: #2c3e50;
+
+}
+
+.container{
+    width: 60vw;
+    height: 80vh;
+    background-color: #ecf0f2;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    border:none;    
+}
+
+.container form{
+    margin: 4rem auto;
+
+}
+.todo-form input[type="text"]{
+  background-color:lightblue;
+  padding: 1rem  ;
+}
+.container form input{
+    width: 100%;
+    margin-bottom: 2rem;
+
+}
+
+.btn-edit{
+    background-color: #8e44ad;
+
+}
+.btn-delete{
+    background-color: #c039;
+}
+
+.btn-create{
+    background-color: #27ae60;
+}
+
+.todo-edit{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-edit h2{
+    color: wheat;
+    font-size: 5rem;
+
+}
+.container-edit{
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-button{
+    margin-top: 3rem;
+}
+
+.edit-button .btn-edit{
+    margin-left: 3rem;
+}
+
+.todo-list{
+    margin:1rem;
+    height: 80%;
+    overflow: auto;
+}
+.todo-item{
+    background-color: #34495e;
+    padding: 2rem;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    color: white;
+    font-weight: bold;
+    position: relative;
+
+}
+.todo-item span{
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 1rem;
+
+}
+
+.todo-buttons{
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.todo-buttons .btn-edit{
+    margin-right: 1rem;
+}
