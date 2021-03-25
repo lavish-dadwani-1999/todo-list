@@ -55,7 +55,7 @@ function createtodo(event){
         console.log("clicked")
         todoedit.style.display = "flex"
         hiddeninput.value = id
-        todoeditinput.value = todo
+        todoeditinput.value = todolist.querySelector('li[data-id="' + id +  '"]').querySelector("span").innerText
     
         
         
@@ -99,13 +99,17 @@ editconfirm.addEventListener("click",function(event){
     console.log(parentcontainer)
     var todoid = parentcontainer.querySelector(".hiddeninput").value
     console.log(todoid)
-
+     // fnd the element which youwant to change inside array
     var todoindex = todos.findIndex(function(todo){ return todo.id === todoid })
-
+    console.log(todoindex)
+    // we have change the value
     todos[todoindex].todo =  todoeditinput.value
-
-    var todolistitem = todolist.querySelector('li[data-id=" ' + todoid +  '"]')
+    // always be safe in spaces as in this line
+    var todolistitem = todolist.querySelector('li[data-id="' + todoid +  '"]')
     console.log(todolistitem)
+    var todospan = todolistitem.querySelector("span")
+    todospan.innerText=  todoeditinput.value
+    todoedit.style.display=("none")
 
     
 })
